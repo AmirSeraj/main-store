@@ -24,7 +24,7 @@ const SingleProduct = ({ product, addToCart, addToCompare, addToWishlist, openQu
     };
     return (
         <>
-            <div className="product-cart-wrap mb-30">
+            <div className="product-cart-wrap mb-30" dir={'rtl'}>
                 <div className="product-img-action-wrap">
                     <div className="product-img product-img-zoom">
                         <Link href="/products/[slug]" as={`/products/${product.slug}`}>
@@ -69,11 +69,11 @@ const SingleProduct = ({ product, addToCart, addToCompare, addToWishlist, openQu
                         <span className="font-small ml-5 text-muted"> ({product.ratingScore})</span>
                     </div>
 
-                    <div>
-                        <span className="font-small text-muted">
-                            By <Link href="/vendor/1">NestFood</Link>
-                        </span>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <span className="font-small text-muted">*/}
+                    {/*        By <Link href="/vendor/1">NestFood</Link>*/}
+                    {/*    </span>*/}
+                    {/*</div>*/}
 
                     <div className="product-card-bottom">
                         <div className="product-price">
@@ -82,7 +82,7 @@ const SingleProduct = ({ product, addToCart, addToCompare, addToWishlist, openQu
                         </div>
                         <div className="add-cart">
                             <a className="add" onClick={(e) => handleCart(product)}>
-                                <i className="fi-rs-shopping-cart mr-5"></i> Add
+                                <i className="fi-rs-shopping-cart mr-5"></i>
                             </a>
                         </div>
                     </div>

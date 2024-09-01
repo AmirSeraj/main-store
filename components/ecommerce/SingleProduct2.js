@@ -58,7 +58,7 @@ const SingleProduct2 = ({ product, addToCart, addToCompare, addToWishlist, openQ
                         {product.discount.percentage >= 5 && <span className="hot">{product.discount.percentage}%</span>}
                     </div>
                 </div>
-                <div className="product-content-wrap">
+                <div className="product-content-wrap" dir={'rtl'}>
                     <div className="product-category">
                         <Link href="/products">{product.brand}</Link>
                     </div>
@@ -84,7 +84,7 @@ const SingleProduct2 = ({ product, addToCart, addToCompare, addToWishlist, openQ
                     </div>
 
                     <a className="btn w-100 hover-up" onClick={(e) => handleCart(product)}>
-                        <i className="fi-rs-shopping-cart mr-5"></i> Add To Cart
+                        <i className="fi-rs-shopping-cart mr-5"></i> افزودن به کارت
                     </a>
                 </div>
             </div>

@@ -11,6 +11,7 @@ import Layout from "./../components/layout/Layout";
 import CategorySlider from "./../components/sliders/Category";
 import Intro1 from "./../components/sliders/Intro1";
 import Link from "next/link";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 
 export default function Home() {
     return (
@@ -20,7 +21,7 @@ export default function Home() {
                 <section className="home-slider position-relative mb-30">
                     <div className="container">
                         <div className="home-slide-cover mt-30">
-                            <Intro1 />
+                            <Intro1/>
                         </div>
                     </div>
                 </section>
@@ -56,7 +57,7 @@ export default function Home() {
                         </div>
                         <div className="carausel-10-columns-cover position-relative">
                             <div className="carausel-10-columns" id="carausel-10-columns">
-                                <CategorySlider />
+                                <CategorySlider/>
                             </div>
                         </div>
                     </div>
@@ -65,7 +66,7 @@ export default function Home() {
                 <section className="banners mb-25">
                     <div className="container">
                         <div className="row">
-                            <Banner5 />
+                            <Banner5/>
                         </div>
                     </div>
                 </section>
@@ -73,33 +74,33 @@ export default function Home() {
                 <section className="product-tabs section-padding position-relative">
                     <div className="container">
                         <div className="col-lg-12">
-                            <CategoryTab />
+                            <CategoryTab/>
                         </div>
                     </div>
                 </section>
 
                 <section className="section-padding pb-5">
                     <div className="container">
-                        <FetchTabSlider />
+                        <FetchTabSlider/>
                     </div>
                 </section>
 
-                <section className="section-padding pb-5">
+                <section className="section-padding pb-5" dir={'rtl'}>
                     <div className="container">
                         <div className="section-title wow animate__animated animate__fadeIn" data-wow-delay="0">
-                            <h3 className="">Deals Of The Day</h3>
+                            <h3 className="">تخفیف های ویژه</h3>
                             <Link href="/products" className="show-all">
-                                All Deals
-                                <i className="fi-rs-angle-right"></i>
+                                موارد بیشتر
+                                <MdKeyboardArrowLeft size={25} />
                             </Link>
                         </div>
-                        <FeatchDeals />
+                        <FeatchDeals/>
                     </div>
                 </section>
 
-                <Bottom />
+                <Bottom/>
 
-                <QuickView />
+                <QuickView/>
             </Layout>
         </>
     );

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { server } from "../../config/index";
+import React, {useEffect, useState} from "react";
+import {server} from "../../config/index";
 import FeaturedTab from './../elements/FeaturedTab';
 import NewArrivalTab from './../elements/NewArrivalTab';
 import TrendingTab from './../elements/TrendingTab';
@@ -42,8 +42,8 @@ function FeatchTab() {
 
     return (
         <>
-            <div className="section-title style-2 wow animate__animated animate__fadeIn">
-            <h3>Popular Products</h3>
+            <div className="section-title style-2 wow animate__animated animate__fadeIn" dir={'rtl'}>
+                <h3>Popular Products</h3>
                 <ul className="nav nav-tabs links" id="myTab" role="tablist">
                     <li className="nav-item" role="presentation">
                         <button
@@ -87,7 +87,7 @@ function FeatchTab() {
                     }
                 >
                     <div className="product-grid-4 row">
-                        <FeaturedTab products={featured} />
+                        <FeaturedTab products={featured}/>
                     </div>
                 </div>
 
@@ -99,7 +99,7 @@ function FeatchTab() {
                     }
                 >
                     <div className="product-grid-4 row">
-                        <TrendingTab products={trending} />
+                        <TrendingTab products={trending}/>
                     </div>
                 </div>
                 <div
@@ -110,11 +110,12 @@ function FeatchTab() {
                     }
                 >
                     <div className="product-grid-4 row">
-                        <NewArrivalTab products={newArrival} />
+                        <NewArrivalTab products={newArrival}/>
                     </div>
                 </div>
             </div>
         </>
     );
 }
+
 export default FeatchTab;

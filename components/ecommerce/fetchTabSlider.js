@@ -5,6 +5,7 @@ import { server } from "../../config/index";
 import FeaturedSlider from "../sliders/Featured";
 import NewArrivalTabSlider from "../sliders/NewArrivalTab";
 import TrendingSlider from "../sliders/Trending";
+import { TiArrowLeft } from "react-icons/ti";
 
 function FeatchTabSlider() {
     const [active, setActive] = useState("1");
@@ -43,8 +44,8 @@ function FeatchTabSlider() {
 
     return (
         <>
-            <div className="section-title wow animate__animated animate__fadeIn">
-                <h3 className="">Daily Best Sells</h3>
+            <div className="section-title wow animate__animated animate__fadeIn" dir={'rtl'}>
+                <h3 className="">پرفروش ترین های روزانه</h3>
 
                 <ul className="nav nav-tabs links" id="myTab-1" role="tablist">
                     <li className="nav-item" role="presentation">
@@ -54,12 +55,12 @@ function FeatchTabSlider() {
                     </li>
                     <li className="nav-item" role="presentation">
                         <button className={active === "2" ? "nav-link active" : "nav-link"} onClick={trendingProduct}>
-                            Popular
+                            محبوب ها
                         </button>
                     </li>
                     <li className="nav-item" role="presentation">
                         <button className={active === "3" ? "nav-link active" : "nav-link"} onClick={newArrivalProduct}>
-                            New added
+                            تازه ها
                         </button>
                     </li>
                 </ul>
@@ -72,7 +73,8 @@ function FeatchTabSlider() {
                             <h2 className="mb-100">Bring nature into your home</h2>
 
                             <Link href="/products" className="btn btn-xs">
-                                Shop Now <i className="fi-rs-arrow-small-right"></i>
+                                <TiArrowLeft size={24} color={'#ccc'} />
+                                <p>محصولات بیشتر</p>
                             </Link>
                         </div>
                     </div>

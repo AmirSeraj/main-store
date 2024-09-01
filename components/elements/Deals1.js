@@ -51,7 +51,8 @@ const Deals1 = ({ product, addToCart }) => {
                             </div>
                             <div className="add-cart">
                                 <a className="add" onClick={(e) => handleCart(product)}>
-                                    <i className="fi-rs-shopping-cart mr-5"></i>Add{" "}
+                                    <p className={'basket--text'}>افزودن به سبد خرید</p>
+                                    <i className="fi-rs-shopping-cart mr-5"></i>
                                 </a>
                             </div>
                         </div>
