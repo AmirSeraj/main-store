@@ -8,71 +8,71 @@ SwiperCore.use([Navigation, Autoplay]);
 const data = [
     {
         id: 1,
-        title: "Cake & Milk",
-        slug: "jeans",
+        title: "گوشی موبایل",
+        slug: "phone",
         img: "cat-13.png",
-        bg: "bg-9"
+        bg: "bg-13"
     },
     {
         id: 2,
-        title: "Oganic Kiwi",
-        slug: "shoe",
+        title: "لپ تاپ",
+        slug: "Laptop",
         img: "cat-12.png",
         bg: "bg-10"
     },
     {
         id: 3,
-        title: "Peach",
-        slug: "jacket",
+        title: "هدفون و هندزفری",
+        slug: "headphone-hands-free",
         img: "cat-11.png",
         bg: "bg-11"
     },
     {
         id: 4,
-        title: "Red Apple",
-        img: "cat-9.png",
+        title: "آداپتور و شارژر",
+        img: "cat-14.png",
         bg: "bg-12"
     },
     {
         id: 5,
-        title: "Snack",
-        img: "cat-3.png",
-        bg: "bg-13"
+        title: "ساعت هوشمند",
+        img: "cat-16.png",
+        bg: "bg-9"
     },
     {
         id: 6,
-        title: "Vegetables",
+        title: "کنسول بازی",
         img: "cat-1.png",
         bg: "bg-14"
     },
     {
         id: 7,
-        title: "Strawberry",
+        title: "پرینتر",
         img: "cat-2.png",
         bg: "bg-15"
     },
     {
         id: 8,
-        title: "Black plum",
+        title: "کابل شارژ",
         img: "cat-4.png",
         bg: "bg-12"
     },
     {
         id: 9,
-        title: "Custard apple",
+        title: "اسپیکر",
         img: "cat-5.png",
         bg: "bg-10"
     },
     {
         id: 10,
-        title: "Coffe & Tea",
-        img: "cat-14.png",
+        title: "پاور بانک",
+        img: "cat-3.png",
         bg: "bg-12"
     },
     {
         id: 11,
-        title: "Headphone",
-        img: "cat-15.png",
+        title: "لوازم جانبی",
+        img: "cat-6.png",
         bg: "bg-11"
     }
 ];
@@ -103,6 +103,7 @@ const CategorySlider = () => {
                     prevEl: ".custom_prev_ct1",
                     nextEl: ".custom_next_ct1"
                 }}
+                dir="rtl"
                 className="custom-class"
                 breakpoints={{
                     480: {
@@ -133,25 +134,27 @@ const CategorySlider = () => {
                             <h6>
                                 <a>{item.title}</a>
                             </h6>
-                            <span>26 items</span>
+                            {/*<span>26 items</span>*/}
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
 
-            <div className="slider-arrow slider-arrow-2 flex-right carausel-10-columns-arrow" id="carausel-10-columns-arrows">
-                <span className="slider-btn slider-prev slick-arrow custom_prev_ct1">
-                    <i className="fi-rs-arrow-small-left"></i>
+            <div className="slider-arrow slider-arrow-2 flex-right carausel-10-columns-arrow align-items-center text-center justify-content-center align-content-center"
+                 id="carausel-10-columns-arrows">
+                <span className="slider-btn slider-next slick-arrow custom_prev_ct1">
+                    <i className="fi-rs-arrow-small-left "></i>
                 </span>
-                <span className="slider-btn slider-next slick-arrow custom_next_ct1">
+                <span className="slider-btn slider-prev slick-arrow custom_next_ct1">
                     <i className="fi-rs-arrow-small-right"></i>
                 </span>
+
             </div>
         </>
     );
 };
 
-export default connect(null, { updateProductCategory })(CategorySlider);
+export default connect(null, {updateProductCategory})(CategorySlider);
 
 
 // import SwiperCore, { Navigation } from "swiper";

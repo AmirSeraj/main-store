@@ -25,25 +25,24 @@ const Search = () => {
     return (
         <>
             <form>
-                <select className="select-active">
-                    <option>All Categories</option>
-                    <option>Women's</option>
-                    <option>Men's</option>
-                    <option>Cellphones</option>
-                    <option>Computer</option>
-                    <option>Electronics</option>
-                    <option> Accessories</option>
-                    <option>Home & Garden</option>
-                    <option>Luggage</option>
-                    <option>Shoes</option>
-                    <option>Mother & Kids</option>
+                <select className="select-active text-center gap-2">
+                    <option>همه دسته بندی ها</option>
+                    <option>گوشی موبایل</option>
+                    <option>تبلت</option>
+                    <option>لوازم جانبی</option>
+                    <option>لپ تاپ</option>
+                    <option>کنسول بازی</option>
+                    <option>ساعت هوشمند</option>
+                    <option>لپ تاپ</option>
+                    <option>هدفون و هندزفری</option>
                 </select>
                 <input
+                    className="search-bar"
                     value={searchTerm}
                     onKeyDown={handleInput}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     type="text"
-                    placeholder="Search"
+                    placeholder="جست و جو"
                 />
             </form>
         </>

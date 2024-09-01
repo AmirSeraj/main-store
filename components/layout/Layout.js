@@ -37,7 +37,7 @@ const Layout = ({
 
             <Header headerStyle={headerStyle} isToggled={isToggled} toggleClick={toggleClick} />
             <MobileMenu isToggled={isToggled} toggleClick={toggleClick} />
-            <main className="main">
+            <main className="main" dir={"rtl"}>
                 <Breadcrumb parent={parent} sub={sub} subChild={subChild} noBreadcrumb={noBreadcrumb} />
                 {children}
             </main>

@@ -17,7 +17,6 @@ import store from "../redux/store";
 import Preloader from "./../components/elements/Preloader";
 import Footer from "../components/layout/Footer";
 import {IranSans} from "../lib/IranSans";
-// import Footer from "../components/layout/Footer";
 
 
 function MyApp({Component, pageProps}) {
@@ -27,10 +26,6 @@ function MyApp({Component, pageProps}) {
         setTimeout(() => {
             setLoading(false);
         }, 2000);
-
-        // new WOW.WOW({
-        //     live: false
-        //   }).init()
     }, []);
     return (
         <div className={IranSans.className}>
@@ -44,7 +39,7 @@ function MyApp({Component, pageProps}) {
             ) : (
                 <Preloader/>
             )}
-            <Footer />
+            <Footer/>
         </div>
     );
 }

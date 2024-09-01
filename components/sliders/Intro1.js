@@ -6,11 +6,11 @@ SwiperCore.use([Navigation, Pagination]);
 
 const Intro1 = () => {
     return (
-        <>
+        <div >
             <Swiper
                 slidesPerView={1}
                 spaceBetween={0}
-                
+
                 pagination={true}
                 navigation={{
                     prevEl: ".custom_prev_i1",
@@ -23,28 +23,20 @@ const Intro1 = () => {
                         className="single-hero-slider single-animation-wrap border"
                         style={{
                             backgroundImage:
-                                "url(assets/imgs/slider/slider-1.png)",
+                                "url(assets/imgs/slider/slider-1.jpg)",
                         }}
                     >
+
                         {/*<img src={} />*/}
-                        <div className="slider-content">
-                            <h1 className="display-2 mb-40">
-                                Don’t miss amazing
-                                <br />
-                                grocery deals
+                        <div className="slider-content align-content-center" dir="rtl">
+                            <h1 className="display-2 mb-40" >
+                                ارسال رایگان در <br/>سراسر کشور
+
                             </h1>
-                            <p className="mb-65">
-                                Sign up for the daily newsletter
+                            <p className="mb-65 font-md" >
+                                خرید با تخفیف بیشتر در بلوتک
                             </p>
-                            <form className="form-subcriber d-flex">
-                                <input
-                                    type="email"
-                                    placeholder="Your emaill address"
-                                />
-                                <button className="btn" type="submit">
-                                    Subscribe
-                                </button>
-                            </form>
+
                         </div>
                     </div>
                 </SwiperSlide>
@@ -53,26 +45,27 @@ const Intro1 = () => {
                         className="single-hero-slider single-animation-wrap"
                         style={{
                             backgroundImage:
-                                "url(assets/imgs/slider/slider-2.png)",
+                                "url(assets/imgs/slider/slider-2.jpg)",
                         }}
                     >
-                        <div className="slider-content">
-                            <h1 className="display-2 mb-40">
-                                Fresh Vegetables
+                        <div className="slider-content" dir="rtl">
+                            <h1 className="display-2 mb-40" style={{color:"#52ff5b"}}>
+                                فروش ویژه محصولات
                                 <br />
-                                Big discount
+                                شیائومی
                             </h1>
-                            <p className="mb-65">
-                                Save up to 50% off on your first order
+                            <p className="mb-65" style={{color:"#f1ffdb"}}>
+                                تا 20% تخفیف بر روی تمامی محصولات شیائومی
                             </p>
                             <form className="form-subcriber d-flex">
-                                <input
-                                    type="email"
-                                    placeholder="Your emaill address"
-                                />
                                 <button className="btn" type="submit">
-                                    Subscribe
+                                    دریافت
                                 </button>
+                                <input
+                                    type="phone"
+                                    placeholder="شماره تماس خود را وارد کنید"
+                                />
+
                             </form>
                         </div>
                     </div>
@@ -87,7 +80,7 @@ const Intro1 = () => {
                     <i className="fi-rs-angle-right"></i>
                 </span>
             </div>
-        </>
+        </div>
     );
 };
 

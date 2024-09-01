@@ -35,16 +35,13 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                                 <div className="header-info">
                                     <ul>
                                         <li>
-                                            <Link href="/page-about">About Us</Link>
+                                            <Link href="/page-about">درباره ما</Link>
                                         </li>
                                         <li>
-                                            <Link href="/page-account">My Account</Link>
+                                            <Link href="/page-account">حساب کاربری</Link>
                                         </li>
                                         <li>
-                                            <Link href="/shop-wishlist">Wishlist</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/page-account">Order Tracking</Link>
+                                            <Link href="/page-account">رهگیری سفارش</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -54,8 +51,8 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                                     <div id="news-flash" className="d-inline-block">
                                         <ul>
                                             <li>
-                                                Get great devices up to 50% off
-                                                <Link href="/shop-grid-right">View details</Link>
+
+                                                <Link href="/shop-grid-right">بلوتک - ارسال سریع و رایگان به سراسر کشور</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -65,59 +62,13 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                                 <div className="header-info header-info-right">
                                     <ul>
                                         <li>
-                                            Need help? Call Us: <strong className="text-brand"> + 1800 900</strong>
-                                        </li>
-                                        <li>
-                                            <Link href="/#" className="language-dropdown-active">
-                                                <i className="fi-rs-world"></i>
-                                                English
-                                                <i className="fi-rs-angle-small-down"></i>
+                                            <Link href="tel:09211899043">
+                                                <strong className="text-brand">
+                                                    09211899043
+                                                </strong>
                                             </Link>
-                                            <ul className="language-dropdown">
-                                                <li>
-                                                    <Link href="/#">
-                                                        <img src="/assets/imgs/theme/flag-fr.png" alt="nest"/>
-                                                        Français
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/#">
-                                                        <img src="/assets/imgs/theme/flag-dt.png" alt="nest"/>
-                                                        Deutsch
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/#">
-                                                        <img src="/assets/imgs/theme/flag-ru.png" alt="nest"/>
-                                                        Pусский
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a className="language-dropdown-active" href="#">
-                                                USD <i className="fi-rs-angle-small-down"></i>
-                                            </a>
-                                            <ul className="language-dropdown">
-                                                <li>
-                                                    <a href="#">
-                                                        <img src="/assets/imgs/theme/flag-fr.png" alt="nest"/>
-                                                        INR
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <img src="/assets/imgs/theme/flag-dt.png" alt="nest"/>
-                                                        MBP
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <img src="/assets/imgs/theme/flag-ru.png" alt="nest"/>
-                                                        EU
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                            &nbsp;&nbsp;
+                                            نیاز به مشاوره دارید؟
                                         </li>
                                     </ul>
                                 </div>
@@ -125,7 +76,7 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                         </div>
                     </div>
                 </div>
-                <div className="header-middle header-middle-ptb-1 d-none d-lg-block">
+                <div className="header-middle header-middle-ptb-1 d-none d-lg-block" dir="rtl" >
                     <div className="container">
                         <div className="header-wrap">
                             <div className="logo logo-width-1">
@@ -133,106 +84,81 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                                     <img src="/assets/imgs/theme/logo.svg" alt="logo"/>
                                 </Link>
                             </div>
-                            <div className="header-right">
+                            <div className="header-right mx-4">
                                 <div className="search-style-2">
                                     <Search/>
                                 </div>
                                 <div className="header-action-right">
-                                    <div className="header-action-2">
-                                        <div className="search-location">
-                                            <form action="#">
-                                                <select className="select-active">
-                                                    <option>Your Location</option>
-                                                    <option>Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>Arizona</option>
-                                                    <option>Delaware</option>
-                                                    <option>Florida</option>
-                                                    <option>Georgia</option>
-                                                    <option>Hawaii</option>
-                                                    <option>Indiana</option>
-                                                    <option>Maryland</option>
-                                                    <option>Nevada</option>
-                                                    <option>New Jersey</option>
-                                                    <option>New Mexico</option>
-                                                    <option>New York</option>
-                                                </select>
-                                            </form>
-                                        </div>
-                                        <div className="header-action-icon-2">
+                                    <div className="header-action-2 gap-2">
+
+                                        <div className="header-action-icon-2 gap-1">
                                             <Link href="/shop-compare">
                                                 <img className="svgInject" alt="Evara"
                                                      src="/assets/imgs/theme/icons/icon-compare.svg"/>
                                                 <span className="pro-count blue">{totalCompareItems}</span>
                                             </Link>
                                             <Link href="/shop-compare">
-                                                <span className="lable ml-0">Compare</span>
+                                                <span className="lable ml-0">مقایسه</span>
                                             </Link>
                                         </div>
-                                        <div className="header-action-icon-2">
+                                        <div className="header-action-icon-2 gap-1">
                                             <Link href="/shop-wishlist">
                                                 <img className="svgInject" alt="Evara"
                                                      src="/assets/imgs/theme/icons/icon-heart.svg"/>
                                                 <span className="pro-count blue">{totalWishlistItems}</span>
                                             </Link>
                                             <Link href="/shop-wishlist">
-                                                <span className="lable">Wishlist</span>
+                                                <span className="lable">لیست من</span>
                                             </Link>
                                         </div>
-                                        <div className="header-action-icon-2">
+                                        <div className="header-action-icon-2 gap-1">
                                             <Link href="/shop-cart" className="mini-cart-icon">
                                                 <img alt="Evara" src="/assets/imgs/theme/icons/icon-cart.svg"/>
                                                 <span className="pro-count blue">{totalCartItems}</span>
                                             </Link>
                                             <Link href="/shop-cart">
-                                                <span className="lable">Cart</span>
+                                                <span className="lable">سبد خرید</span>
                                             </Link>
                                         </div>
 
-                                        <div className="header-action-icon-2">
+                                        <div className="header-action-icon-2 gap-1">
                                             <Link href="/page-account">
                                                 <img className="svgInject" alt="Nest"
                                                      src="/assets/imgs/theme/icons/icon-user.svg"/>
                                             </Link>
                                             <Link href="/page-account">
-                                                <span className="lable ml-0">Account</span>
+                                                <span className="lable ml-0">داشبورد</span>
                                             </Link>
                                             <div className="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                                 <ul>
                                                     <li>
                                                         <Link href="/page-account">
                                                             <i className="fi fi-rs-user mr-10"></i>
-                                                            My Account
+                                                            حساب من
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/page-account">
                                                             <i className="fi fi-rs-location-alt mr-10"></i>
-                                                            Order Tracking
+                                                            رهگیری سفارشات
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/page-account">
                                                             <i className="fi fi-rs-label mr-10"></i>
-                                                            My Voucher
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/shop-wishlist">
-                                                            <i className="fi fi-rs-heart mr-10"></i>
-                                                            My Wishlist
+                                                            سفارشات من
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/page-account">
                                                             <i className="fi fi-rs-settings-sliders mr-10"></i>
-                                                            Setting
+                                                            تنظیمات
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/page-login">
                                                             <i className="fi fi-rs-sign-out mr-10"></i>
-                                                            Sign out
+                                                            خروج
                                                         </Link>
                                                     </li>
                                                 </ul>
@@ -244,8 +170,8 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                         </div>
                     </div>
                 </div>
-                <div
-                    className={scroll ? "header-bottom header-bottom-bg-color sticky-bar stick" : "header-bottom header-bottom-bg-color sticky-bar"}>
+                <div dir="rtl"
+                     className={scroll ? "header-bottom header-bottom-bg-color sticky-bar stick" : "header-bottom header-bottom-bg-color sticky-bar"}>
                     <div className="container">
                         <div className="header-wrap header-space-between position-relative">
                             <div className="logo logo-width-1 d-block d-lg-none">
@@ -257,8 +183,8 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                                 <div className="main-categori-wrap d-none d-lg-block">
                                     <a className="categories-button-active" onClick={handleToggle}>
                                         <span className="fi-rs-apps"></span>
-                                        <span className="et">Browse</span> All Categories
-                                        <i className="fi-rs-angle-down"></i>
+                                        <span className="et">دسته بندی کالاها</span>
+                                        {/*<i className="fi-rs-angle-down"></i>*/}
                                     </a>
 
                                     <div
@@ -301,79 +227,67 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    className="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block  font-heading">
+                                <div dir="rtl"
+                                     className="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block  font-heading">
                                     <nav>
                                         <ul>
                                             <li className="hot-deals">
                                                 <img src="/assets/imgs/theme/icons/icon-hot.svg" alt="hot deals"/>
-                                                <Link href="/products">Hot Deals</Link>
+                                                <Link href="/products">پیشنهادات شگفت انگیز</Link>
                                             </li>
                                             <li>
                                                 <Link href="/" className="active">
-                                                    Home
+                                                    صفحه اصلی
+                                                    {/*<i className="fi-rs-angle-down"></i>*/}
+                                                </Link>
+
+                                            </li>
+                                            <li>
+                                                <Link href="/page-about">درباره ما</Link>
+                                            </li>
+                                            <li>
+                                                <Link href="/shop-grid-right" className={''}>
+                                                    موبایل
                                                     <i className="fi-rs-angle-down"></i>
                                                 </Link>
                                                 <ul className="sub-menu">
                                                     <li>
-                                                        <Link href="/">Home 1</Link>
+                                                        <Link href="/shop-grid-right">آیفون</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/index-2">Home 2</Link>
+                                                        <Link href="/products">سامسونگ</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/index-3">Home 3</Link>
+                                                        <Link href="/shop-list-right">شیائومی</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/index-4">Home 4</Link>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <Link href="/page-about">About</Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/shop-grid-right">
-                                                    Shop
-                                                    <i className="fi-rs-angle-down"></i>
-                                                </Link>
-                                                <ul className="sub-menu">
-                                                    <li>
-                                                        <Link href="/shop-grid-right">Shop Grid – Right Sidebar</Link>
+                                                        <Link href="/shop-list-left">آنر</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/products">Shop Grid – Left Sidebar</Link>
+                                                        <Link href="/shop-fullwidth">سایر</Link>
                                                     </li>
-                                                    <li>
-                                                        <Link href="/shop-list-right">Shop List – Right Sidebar</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/shop-list-left">Shop List – Left Sidebar</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/shop-fullwidth">Shop - Wide</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/shop-filter">Shop - Filter</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/shop-wishlist">Shop – Wishlist</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/shop-cart">Shop – Cart</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/shop-checkout">Shop – Checkout</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/shop-compare">Shop – Compare</Link>
-                                                    </li>
+                                                    {/*<li>*/}
+                                                    {/*    <Link href="/shop-filter">Shop - Filter</Link>*/}
+                                                    {/*</li>*/}
+                                                    {/*<li>*/}
+                                                    {/*    <Link href="/shop-wishlist">Shop – Wishlist</Link>*/}
+                                                    {/*</li>*/}
+                                                    {/*<li>*/}
+                                                    {/*    <Link href="/shop-cart">Shop – Cart</Link>*/}
+                                                    {/*</li>*/}
+                                                    {/*<li>*/}
+                                                    {/*    <Link href="/shop-checkout">Shop – Checkout</Link>*/}
+                                                    {/*</li>*/}
+                                                    {/*<li>*/}
+                                                    {/*    <Link href="/shop-compare">Shop – Compare</Link>*/}
+                                                    {/*</li>*/}
                                                 </ul>
                                             </li>
 
                                             <li>
                                                 <a href="#">
-                                                    Vendors <i className="fi-rs-angle-down"></i>
+                                                    هدفون و هندزفری
+                                                    <i className="fi-rs-angle-down"></i>
                                                 </a>
                                                 <ul className="sub-menu">
                                                     <li>
@@ -393,7 +307,7 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
 
                                             <li className="position-static">
                                                 <Link href="/#">
-                                                    Mega menu
+                                                    ساعت و مچ بند هوشمند
                                                     <i className="fi-rs-angle-down"></i>
                                                 </Link>
                                                 <ul className="mega-menu">
@@ -505,90 +419,37 @@ const Header = ({totalCartItems, totalCompareItems, toggleClick, totalWishlistIt
                                             </li>
                                             <li>
                                                 <Link href="/blog-category-grid">
-                                                    Blog
+                                                    کنسول بازی
                                                     <i className="fi-rs-angle-down"></i>
                                                 </Link>
                                                 <ul className="sub-menu">
                                                     <li>
-                                                        <Link href="/blog-category-grid">Blog Category Grid</Link>
+                                                        <Link href="/blog-category-grid">PlayStation</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/blog-category-list">Blog Category List</Link>
+                                                        <Link href="/blog-category-list">Xbox</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/blog-category-big">Blog Category Big</Link>
+                                                        <Link href="/blog-category-big">Nintendo</Link>
                                                     </li>
-                                                    <li>
-                                                        <Link href="/blog-category-fullwidth">Blog Category Wide</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/#">
-                                                            Single Post
-                                                            <i className="fi-rs-angle-right"></i>
-                                                        </Link>
-                                                        <ul className="level-menu level-menu-modify">
-                                                            <li>
-                                                                <Link href="/blog-post-left">Left Sidebar</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/blog-post-right">Right Sidebar</Link>
-                                                            </li>
-                                                            <li>
-                                                                <Link href="/blog-post-fullwidth">No Sidebar</Link>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
+
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <Link href="/#">
-                                                    Pages
-                                                    <i className="fi-rs-angle-down"></i>
-                                                </Link>
-                                                <ul className="sub-menu">
-                                                    <li>
-                                                        <Link href="/page-about">About Us</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/page-contact">Contact</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/page-account">My Account</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/page-login">Login</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/page-register">Register</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/page-purchase-guide">Purchase Guide</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/page-privacy-policy">Privacy Policy</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/page-terms">Terms of Service</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/page-404">404 Page</Link>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <Link href="/page-contact">Contact</Link>
-                                            </li>
+
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div className="hotline d-none d-lg-flex">
-                                <img src="/assets/imgs/theme/icons/icon-headphone.svg" alt="hotline"/>
+                            <Link href="https://t.me/TenTechStore">
+                                <div className="hotline d-none d-lg-flex flex gap-2 align-items-center">
+                                    <img src="/assets/imgs/theme/icons/Telegram_logo.svg" alt="telegram support"
+                                         style={{height: "2rem", width: "2rem"}}/>
+                                    <span>
+                                     پشتیبانی تلگرام
+                                    </span>
 
-                                <p>
-                                    1900 - 888<span>24/7 Support Center</span>
-                                </p>
-                            </div>
+                                </div>
+                            </Link>
 
                             <div className="header-action-icon-2 d-block d-lg-none">
                                 <div className="burger-icon burger-icon-white" onClick={toggleClick}>

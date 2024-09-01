@@ -879,17 +879,13 @@ strong,
 }
 
 .section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 44px;
-    position: relative;
+    /*position: relative;*/
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .section-title .title {
@@ -1960,7 +1956,7 @@ label {
 .hero-slider-1 .slider-content {
     position: absolute;
     top: 50%;
-    left: 6%;
+    right: 6%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -2124,7 +2120,7 @@ label {
     display: flex;
     position: absolute;
     top: -75px;
-    right: 0;
+    left: 0;
     max-width: 200px;
     -webkit-box-pack: flex-end;
     -ms-flex-pack: flex-end;
@@ -7940,12 +7936,12 @@ span.fi-rs-apps {
 }
 
 /*LAYOUT -> NAVIGATION STYLE*/
-.main-menu.main-menu-mrg-1 {
-    margin: 0 0 0 27px;
-}
-
 .main-menu > nav > ul > li.hot-deals {
     padding-right: 30px !important;
+}
+
+.main-menu.main-menu-mrg-1 {
+    margin: 0 0 0 27px;
 }
 
 .main-menu > nav > ul > li.hot-deals img {
@@ -12175,21 +12171,53 @@ footer .hotline img {
     z-index: 99999;
 }
 
-/*# sourceMappingURL=main.css.map */
-
-input[type="email"]:-moz-placeholder {
+input:-moz-placeholder {
     text-align: right;
     padding-right: 2rem;
 }
 
-input[type="email"]:-ms-input-placeholder {
+input:-ms-input-placeholder {
     text-align: right;
     padding-right: 2rem;
 
 }
 
-input[type="email"]::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
     text-align: right;
     padding-right: 2rem;
+}
 
+
+
+.search-bar::-moz-placeholder {
+    text-align: right;
+    padding-right: 0rem;
+}
+
+.search-bar::-ms-input-placeholder {
+    text-align: right;
+    padding-right: 0rem;
+
+}
+
+.search-bar::-webkit-input-placeholder {
+    text-align: right;
+    padding-right: 0rem;
+}
+
+.search-bar{
+    padding-right: 4rem;
+}
+
+.all-rights{
+    font-family: sans-serif;
+}
+
+.outlined_text{
+    backdrop-filter: blur(10px) saturate(70%);
+    color: #68ffb9;
+    border-color: #3bb77e;
+    border-radius: 2rem;
+    min-width: 50% ;
+    max-width: 100%;
 }

@@ -28,31 +28,9 @@ export default function Home() {
 
                 <section className="popular-categories section-padding">
                     <div className="container wow animate__fadeIn animate__animated">
-                        <div className="section-title">
+                        <div className="section-title" dir="rtl">
                             <div className="title">
-                                <h3>Featured Categories</h3>
-                                <ul className="list-inline nav nav-tabs links">
-                                    <li className="list-inline-item nav-item">
-                                        <Link href="/products" className="nav-link">
-                                            Cake & Milk
-                                        </Link>
-                                    </li>
-                                    <li className="list-inline-item nav-item">
-                                        <Link href="/products" className="nav-link">
-                                            Coffes & Teas
-                                        </Link>
-                                    </li>
-                                    <li className="list-inline-item nav-item">
-                                        <Link href="/products" className="nav-link">
-                                            Pet Foods
-                                        </Link>
-                                    </li>
-                                    <li className="list-inline-item nav-item">
-                                        <Link href="/products" className="nav-link">
-                                            Vegetables
-                                        </Link>
-                                    </li>
-                                </ul>
+                                <h3>محبوب ترین ها</h3>
                             </div>
                         </div>
                         <div className="carausel-10-columns-cover position-relative">
@@ -91,7 +69,7 @@ export default function Home() {
                             <h3 className="">تخفیف های ویژه</h3>
                             <Link href="/products" className="show-all">
                                 موارد بیشتر
-                                <MdKeyboardArrowLeft size={25} />
+                                <MdKeyboardArrowLeft size={25}/>
                             </Link>
                         </div>
                         <FeatchDeals/>

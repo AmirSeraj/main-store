@@ -16,9 +16,9 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="position-relative newsletter-inner">
-                                    <div className="newsletter-content">
-                                        <h2 className="mb-20">
-                                            برای دریافت پیشنهادات ویژه <br/>
+                                    <div className="newsletter-content " style={{height:"100%"}}>
+                                        <h2 className="mb-20 outlined_text p-3">
+                                            برای دریافت پیشنهادات ویژه
                                             ایمیل خود را وارد کنید.
                                         </h2>
                                         {/*<p className="mb-45">*/}
@@ -48,7 +48,7 @@ const Footer = () => {
                 </section>
                 <section className="featured  section-padding">
                     <div className="container">
-                        <div className="row">
+                        <div className="row align-items-center justify-content-center">
                             <div className="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
                                 <div
                                     className="banner-left-icon d-flex align-items-center  wow animate__animated animate__fadeInUp"
@@ -56,7 +56,7 @@ const Footer = () => {
                                 >
                                     <div className="banner-icon">
                                         <img
-                                            src="/assets/imgs/theme/icons/icon-1.svg"
+                                            src="/assets/imgs/theme/icons/icon-6.svg"
                                             alt="nest"
                                         />
                                     </div>
@@ -98,7 +98,7 @@ const Footer = () => {
                                     </div>
                                     <div className="banner-text">
                                         <h3 className="icon-box-title">
-                                            امکان پرداخت در محل
+                                            پرداخت در محل
                                         </h3>
                                     </div>
                                 </div>
@@ -115,8 +115,8 @@ const Footer = () => {
                                         />
                                     </div>
                                     <div className="banner-text">
-                                        <h3 className="icon-box-title">
-                                            اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس
+                                        <h3 className="icon-box-title text-center">
+                                            ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس
                                         </h3>
                                     </div>
                                 </div>
@@ -133,28 +133,9 @@ const Footer = () => {
                                         />
                                     </div>
                                     <div className="banner-text">
-                                        <h3 className="icon-box-title">
+                                        <h3 className="icon-box-title text-center">
                                             هفت روز ضمانت بازگشت کالا
                                         </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-none">
-                                <div
-                                    className="banner-left-icon d-flex align-items-center  wow animate__animated animate__fadeInUp"
-                                    data-wow-delay=".5s"
-                                >
-                                    <div className="banner-icon">
-                                        <img
-                                            src="/assets/imgs/theme/icons/icon-6.svg"
-                                            alt="nest"
-                                        />
-                                    </div>
-                                    <div className="banner-text">
-                                        <h3 className="icon-box-title">
-                                            Safe delivery
-                                        </h3>
-                                        <p>Within 30 days</p>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +169,7 @@ const Footer = () => {
                                             />
                                             <strong>آدرس: </strong>{" "}
                                             <span className={'mr-5'}>
-                                                مشهد - بلوار جانباز ....
+                                                مشهد - بلوار امامت 41 - پلاک 30
                                             </span>
                                         </li>
                                         <li>
@@ -198,7 +179,9 @@ const Footer = () => {
                                             />
                                             <strong>تماس با ما:</strong>
                                             <span className={'mr-5'} dir={'ltr'}>
-                                                (+98) 915 248 5119
+                                                <a href="tel:09211899043">
+                                                09211899043
+                                                </a>
                                             </span>
                                         </li>
                                         <li>
@@ -207,7 +190,11 @@ const Footer = () => {
                                                 alt="nest"
                                             />
                                             <strong>ایمیل:</strong>
-                                            <span className={'mr-5'}>amir.seraj6990@gmail.com</span>
+                                            <span className={'mr-5'}>
+                                                <a href="mailto:info@balootech.ir">
+                                                info@balootech.ir
+                                                </a>
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -219,7 +206,7 @@ const Footer = () => {
                                 <h4 className="widget-title">شرکت</h4>
                                 <ul className="footer-list  mb-sm-5 mb-md-0">
                                     <li>
-                                        <a href="#">درباره ما</a>
+                                        <a href="/page-about">درباره ما</a>
                                     </li>
                                     <li>
                                         <a href="#">تماس با ما</a>
@@ -320,8 +307,8 @@ const Footer = () => {
                             <div className="footer-bottom"></div>
                         </div>
                         <div className="col-xl-4 col-lg-6 col-md-6">
-                            <p className="font-sm mb-0">
-                                All rights reserved
+                            <p className="font-sm mb-0 all-rights">
+                                copyright © 2024 all rights reserved
                             </p>
                         </div>
                         <div className="col-xl-4 col-lg-6 text-center d-none d-xl-block">
